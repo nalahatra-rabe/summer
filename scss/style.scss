@@ -1,0 +1,161 @@
+@import '_color.scss';
+@import '_navbar.scss';
+html,
+body {
+    color: $primary-color;
+    font-family: sans-serif;
+    background-color: #FFF;
+}
+
+.nav-shadow {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.no-pad {
+    padding: 5px 20px;
+    background-color: #FFF;
+    color: #FFF;
+}
+
+.summer-banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/top\ _banner_image.png');
+    background: {
+        size: cover;
+        position: center;
+        attachment: fixed;
+    }
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 140px;
+    }
+    .summer-banner-container {
+        padding: 20px 100px;
+        h1 {
+            color: $secondary-color;
+            font-weight: bold;
+            margin-top: 200px;
+            font-size: 80px;
+            letter-spacing: 2px;
+            text-shadow: 2px 4px 5px $primary-color;
+        }
+        .title-text {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .btn {
+            background-color: #FFF;
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 20px;
+            border: 0;
+            transition: all 0.5s ease;
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                transform: scale(1.1);
+            }
+        }
+        p {
+            text-align: justify;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .summer-banner {
+        .summer-banner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2px 10px;
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.summer-subscribe {
+    width: 100%;
+    background: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .subscribe-content {
+        h1 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 4em;
+        }
+        p {
+            color: $primary-color;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+    }
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form-inline {
+            .btn {
+                background: $primary-color;
+                color: #FFF;
+                font-weight: bold;
+                border-radius: 20px;
+                margin-left: -50px;
+            }
+            .form-control {
+                border-radius: 20px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .summer-subscribe {
+        .subscribe-content {
+            h1 {
+                font-size: 16px;
+            }
+            .search-bar {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .btn {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    #sub {
+        .form-inline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .form-control {
+                display: none;
+            }
+            .btn {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+@import '_footer.scss';

@@ -1,0 +1,141 @@
+/*
+import de font*/
+
+@font-face {
+    font-family: "MuliBlack";
+    src: url("../font-awesome/fonts/Muli/Muli-Black.ttf");
+}
+
+@font-face {
+    font-family: "MuliBlackItalic";
+    src: url("../font-awesome/fonts/Muli/Muli-BlackItalic.ttf");
+}
+
+* {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.explore-body {
+    background-image: url("../images/hommeswave.png");
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.explore-body .explore-body div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: justify;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.explore-body .explore-body div div .primaire {
+    font-size: 60px;
+    color: #eab474;
+    font-family: "MuliBlack";
+}
+
+.explore-body .explore-body div div .secondaire {
+    color: #0c0907;
+    font-size: 60px;
+    font-family: "MuliBlackItalic";
+}
+
+
+/* Partie 2 (lorem)*/
+
+.lorembgshadow {
+    background-image: url("../images/bglorem.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.lorembgshadow .lorem-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lorembgshadow .lorem-body div div p:nth-child(1) {
+    color: #eab474;
+    font-size: 19px;
+}
+
+.lorembgshadow .lorem-body2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.lorembgshadow .lorem-body2 div div .font {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.lorembgshadow .lorem-body2 div div p:nth-child(1) {
+    font-size: 17px;
+}
+
+.lorembgshadow .lorem-body2 div div p:nth-child(2) {
+    font-size: 15px;
+}
+
+
+/*
+
+
+
+*/

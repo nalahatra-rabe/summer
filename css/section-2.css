@@ -1,0 +1,394 @@
+* {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 {
+    width: 100%;
+    height: auto;
+}
+
+.section-2 .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-2 .container h3 {
+    color: #eab474;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.section-2 .container .post-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-2 .container .post-card .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #81776e;
+    color: #fefefe;
+    width: 339px;
+    height: 450px;
+    max-height: 450px;
+    border: none;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.section-2 .container .post-card .card div:first-child {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.section-2 .container .post-card .card div:first-child img {
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.section-2 .container .post-card .card div:last-child {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.section-2 .container .post-card .card div:last-child h3 {
+    color: white;
+    margin-left: 5px;
+    transition: transform 0.4s ease;
+}
+
+.section-2 .container .post-card .card div:last-child p {
+    margin-left: 5px;
+    opacity: 0.75;
+    transition: transform 0.5s ease;
+}
+
+.section-2 .container .post-card .card:hover {
+    background-color: #23242a;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-2 .container .post-card .card:hover div:first-child {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.section-2 .container .post-card .card:hover div:first-child img {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.section-2 .container .post-card .card:hover p,
+.section-2 .container .post-card .card:hover h3 {
+    transform: translateY(-15px);
+}
+
+.section-2 .container .post-card .card:last-child {
+    margin-right: 0;
+}
+
+.section-2 .container .button button {
+    background-color: #81776e;
+    color: white;
+    border-radius: 25px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.section-2 .container .button button:focus {
+    outline: none;
+}
+
+.section-2 .container .button button:hover {
+    background-color: #ee9a33;
+    font-weight: 600;
+}
+
+.section3 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.section3 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .container .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+.section3 .container .row div:nth-child(1) {
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+    width: 550px;
+}
+
+.section3 .container .row div:nth-child(1) button {
+    display: none;
+}
+
+.section3 .container .row div:nth-child(1) img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -15px;
+    transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.section3 .container .row div:nth-child(1) img:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+}
+
+.section3 .container .row div:nth-child(4) {
+    position: relative;
+    height: 550px;
+    width: 550px;
+    overflow: hidden;
+}
+
+.section3 .container .row div:nth-child(4) button {
+    display: none;
+}
+
+.section3 .container .row div:nth-child(4) img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -15px;
+    transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+    mix-blend-mode: darken;
+}
+
+.section3 .container .row div:nth-child(4) img:hover {
+    transform: scale3d(1.3, 1.3, 1.3);
+}
+
+.section3 .container .row div:nth-child(2),
+.section3 .container .row div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 550px;
+    background: #81776e;
+    transition: all 0.5s ease;
+}
+
+.section3 .container .row div:nth-child(2) h3,
+.section3 .container .row div:nth-child(3) h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+
+.section3 .container .row div:nth-child(2) p,
+.section3 .container .row div:nth-child(3) p {
+    padding: 15px 15x;
+    transition: all 0.5s ease;
+}
+
+.section3 .container .row div:nth-child(2) button,
+.section3 .container .row div:nth-child(3) button {
+    background-color: #ee9a33;
+    color: white;
+    border-radius: 25px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    transition: background-color 0.5s ease;
+    transition: border-radius 0.5s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1.5s ease;
+}
+
+.section3 .container .row div:nth-child(2) button:focus,
+.section3 .container .row div:nth-child(3) button:focus {
+    outline: none;
+}
+
+.section3 .container .row div:nth-child(2):hover,
+.section3 .container .row div:nth-child(3):hover {
+    background-color: #23242a;
+}
+
+.section3 .container .row div:nth-child(2):hover button,
+.section3 .container .row div:nth-child(3):hover button {
+    background-color: white;
+    color: #23242a;
+    transform: translateY(45px);
+}
+
+.section3 .container .row div:nth-child(2):hover p,
+.section3 .container .row div:nth-child(3):hover p {
+    transform: translateY(15px);
+}
+
+.section3 .container .row div:nth-child(2):hover h3,
+.section3 .container .row div:nth-child(3):hover h3 {
+    transform: translateY(-15px);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .section3 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 150px;
+    }
+    .section3 .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3 .container .row {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 150px;
+    }
+    .section3 .container .row div:nth-child(1) {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin-top: 15px;
+    }
+    .section3 .container .row div:nth-child(1) img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: -15px;
+    }
+    .section3 .container .row div:nth-child(1) button {
+        position: absolute;
+        z-index: 5;
+        background-color: #ee9a33;
+        color: white;
+        width: 200px;
+        height: 45px;
+        border: none;
+        transition: background-color 0.5s ease;
+        transition: border-radius 0.5s ease;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 100%;
+        left: 0;
+        bottom: 0px;
+        display: block;
+    }
+    .section3 .container .row div:nth-child(1) button:focus {
+        outline: none;
+    }
+    .section3 .container .row div:nth-child(1) button:hover {
+        display: block;
+        background-color: #23242a;
+        font-weight: 600;
+        width: 100%;
+    }
+    .section3 .container .row div:nth-child(4) {
+        margin-top: 10px;
+        position: relative;
+        height: 550px;
+        width: 550px;
+    }
+    .section3 .container .row div:nth-child(4) img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: -16px;
+    }
+    .section3 .container .row div:nth-child(4) button {
+        position: absolute;
+        z-index: 5;
+        background-color: #ee9a33;
+        color: white;
+        width: 200px;
+        height: 45px;
+        border: none;
+        transition: background-color 0.5s ease;
+        transition: border-radius 0.5s ease;
+        text-transform: uppercase;
+        font-weight: 400;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: block;
+    }
+    .section3 .container .row div:nth-child(4) button:focus {
+        outline: none;
+    }
+    .section3 .container .row div:nth-child(4) button:hover {
+        display: block;
+        background-color: #23242a;
+        font-weight: 600;
+        width: 100%;
+    }
+    .section3 .container .row div:nth-child(2),
+    .section3 .container .row div:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+        height: 250px;
+        height: auto;
+        background: #81776e;
+    }
+    .section3 .container .row div:nth-child(2) h3,
+    .section3 .container .row div:nth-child(3) h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .section3 .container .row div:nth-child(2) p,
+    .section3 .container .row div:nth-child(3) p {
+        padding: 15px 15x;
+    }
+    .section3 .container .row div:nth-child(2) button,
+    .section3 .container .row div:nth-child(3) button {
+        display: none;
+    }
+}
+
+
+/*# sourceMappingURL=section-2.css.map */

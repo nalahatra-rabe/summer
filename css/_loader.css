@@ -1,0 +1,27 @@
+.loader {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23242A;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.lasa {
+  animation: go 2s forwards;
+}
+
+@keyframes go {
+  from {
+    opacity: 0;
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/*# sourceMappingURL=_loader.css.map */

@@ -1,0 +1,109 @@
+.navbar {
+    padding: 20px 100px;
+    background-color: #FFF;
+    transition: all .5s ease;
+    .form-inline {
+        margin-top: -8px;
+        display: none;
+        .form-control {
+            background-color: #c4bfbb;
+            color: #FFF;
+            border-radius: 20px;
+            border: 0;
+            width: 200px;
+            transition: width .5s ease;
+            &:focus {
+                width: 200px;
+            }
+        }
+        .btn {
+            border: 0;
+            margin-left: -50px;
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+    .navbar-toggler {
+        background-color: $primary-color;
+        span {
+            color: $primary-color;
+        }
+    }
+    .navbar-brand {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                a {
+                    color: $primary-color;
+                    padding: 0px 20px;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                }
+                .form-inline {
+                    margin-top: -8px;
+                    display: block;
+                    .form-control {
+                        background-color: #c4bfbb;
+                        color: #FFF;
+                        border-radius: 20px;
+                        border: 0;
+                        width: 120px;
+                        transition: width .5s ease;
+                        &:focus {
+                            width: 200px;
+                        }
+                    }
+                    .btn {
+                        border: 0;
+                        margin-left: -50px;
+                        i {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        padding: 20px 20px;
+    }
+    #search {
+        display: none;
+    }
+}
+
+@media screen and (max-width:989px) {
+    .navbar {
+        .form-inline {
+            display: block;
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .form-inline {
+                        margin-top: 5px;
+                        .form-control {
+                            width: 100%;
+                            .btn {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
